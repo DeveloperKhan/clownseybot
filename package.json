@@ -4,14 +4,21 @@
   "description": "Dracoviz Clownsey Bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-commands": "node deploy-commands.js",
+    "start": "node index.js",
+    "lint": "eslint --fix"
   },
   "author": "AdibKhan",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.16.3"
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.6"
   },
   "devDependencies": {
-    "eslint": "^9.16.0"
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0"
   }
 }
