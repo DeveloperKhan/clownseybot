@@ -14,7 +14,7 @@ module.exports = {
 	async execute(interaction) {
 		const currentStream = interaction.options.getString('link');
 		if (currentStream == null || !currentStream.includes('https://www.youtube.com/embed')) {
-			await interaction.reply('Invalid link');
+			await interaction.reply('Invalid link. Must be a YouTube embed link.');
 			return;
 		}
 		const client = new MongoClient(uri);
